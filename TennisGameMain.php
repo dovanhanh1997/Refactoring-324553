@@ -8,8 +8,6 @@
 
 include ('TennisGame.php');
 
-$tennisGame = new TennisGame();
-
-$tennisGame->getScore('player1', 'player2', 6, 8);
-
+$tennisGame = new TennisGame('Player 1','Player 2',6,8);
+$tennisGame->calculateScore();
 echo $tennisGame;
